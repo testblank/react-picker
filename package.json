@@ -1,0 +1,50 @@
+{
+  "name": "sh-react-picker",
+  "version": "1.0.0",
+  "description": "upgrage dependencies version for rmc-picker-scroll",
+  "scripts": {
+    "watch-tsc": "rc-tools run watch-tsc",
+    "compile": "rc-tools run compile --babel-runtime",
+    "build": "rc-tools run build",
+    "gh-pages": "rc-tools run gh-pages",
+    "start": "rc-tools run server",
+    "prepublish": "rc-tools run guard",
+    "prepare": "rc-tools run guard",
+    "prepublishOnly": "rc-tools run guard",
+    "pub": "rc-tools run pub --babel-runtime",
+    "lint": "rc-tools run lint --no-js-lint",
+    "karma": "rc-test run karma",
+    "saucelabs": "rc-test run saucelabs",
+    "test": "rc-test run test",
+    "chrome-test": "rc-test run chrome-test",
+    "coverage": "rc-test run coverage"
+  },
+  "author": "testblank",
+  "license": "MIT",
+  "config": {
+    "port": 8021,
+    "entry": [
+      "./src/index.tsx",
+      "./src/index.css"
+    ]
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.1",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.5",
+    "array-tree-filter": "^2.1.0",
+    "expect.js": "^0.3.1",
+    "fastclick": "^1.0.6",
+    "pre-commit": "^1.2.2",
+    "rc-test": "^6.0.9",
+    "rc-tools": "^9.6.1-alpha.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "classnames": "^2.3.1",
+    "rmc-dialog": "^1.1.1",
+    "rmc-feedback": "^2.0.0"
+  }
+}

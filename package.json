@@ -1,6 +1,6 @@
 {
   "name": "sh-react-picker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "upgrage dependencies version for rmc-picker-scroll",
   "scripts": {
     "watch-tsc": "rc-tools run watch-tsc",
@@ -24,7 +24,7 @@
       "./src/index.css"
     ]
   },
-	"files": [
+  "files": [
     "lib",
     "es",
     "assets/*.css"

@@ -21,6 +21,11 @@
   },
   "author": "testblank",
   "license": "MIT",
+	"files": [
+    "lib",
+    "es",
+    "assets/*.css"
+  ],
   "config": {
     "port": 8021,
     "entry": [

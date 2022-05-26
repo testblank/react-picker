@@ -1,9 +1,9 @@
-/* tslint:disable:no-console */
+/* eslint:disable:no-console */
 
-import "../src/index.css";
-import MultiPicker from "../src/MultiPicker";
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+
+import MultiPicker from "../src/MultiPicker";
 import Picker from "../src/Picker";
 
 class Test extends React.Component<any, any> {
@@ -88,4 +88,6 @@ class Test extends React.Component<any, any> {
   }
 }
 
-ReactDOM.render(<Test />, document.getElementById("__react-content"));
+const container = document.getElementById("__react-content");
+const root = createRoot(container!); // createRoot(container!) if you use TypeScript
+root.render(<Test tab="home" />);

@@ -1,9 +1,8 @@
-/* tslint:disable:no-console */
-
-import "../src/index.css";
-import Picker from "../src/Picker";
+/* eslint:disable:no-console */
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+
+import Picker from "../src/Picker";
 
 let count = 0;
 const len = 10;
@@ -74,4 +73,6 @@ class PickerDemo extends React.Component<any, any> {
   }
 }
 
-ReactDOM.render(<PickerDemo />, document.getElementById("__react-content"));
+const container = document.getElementById("__react-content");
+const root = createRoot(container!); // createRoot(container!) if you use TypeScript
+root.render(<PickerDemo tab="home" />);

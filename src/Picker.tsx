@@ -255,26 +255,33 @@ class Picker extends React.Component<IPickerProp & IPickerProps, any> {
     return passiveSupported;
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps: IPickerProp & IPickerProps) {
-    if ("selectedValue" in nextProps) {
-      if (this.state.selectedValue !== nextProps.selectedValue) {
-        this.setState(
-          {
-            selectedValue: nextProps.selectedValue,
-          },
-          () => {
-            this.props.select(
-              nextProps.selectedValue,
-              this.itemHeight,
-              nextProps.noAnimate
-                ? this.scrollToWithoutAnimation
-                : this.scrollTo
-            );
-          }
-        );
-      }
+  // UNSAFE_componentWillReceiveProps(nextProps: IPickerProp & IPickerProps) {
+  static getDerivedStateFromProps(
+    nextProps: IPickerProp & IPickerProps,
+    state: any
+  ) {
+    if (state.selectedValue !== nextProps?.selectedValue) {
+      return {
+        selectedValue: nextProps.selectedValue,
+      };
+
+      //   this.setState(
+      //     {
+      //       selectedValue: nextProps.selectedValue,
+      //     },
+      //     () => {
+      //       this.props.select(
+      //         nextProps.selectedValue,
+      //         this.itemHeight,
+      //         nextProps.noAnimate
+      //           ? this.scrollToWithoutAnimation
+      //           : this.scrollTo
+      //       );
+      //     }
+      //   );
     }
-    this.scrollHanders.setDisabled(nextProps.disabled);
+    // this.scrollHanders.setDisabled(nextProps.disabled);
+    return null;
   }
 
   shouldComponentUpdate(nextProps, nextState) {

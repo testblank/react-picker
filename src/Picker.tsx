@@ -1,7 +1,27 @@
 import * as React from "react";
 import classNames from "classnames";
-import { IPickerProps } from "./PickerTypes";
+// import { IPickerProps } from "./PickerTypes";
 import PickerMixin from "./PickerMixin";
+
+import "./index.css";
+
+export interface IPickerProps {
+  disabled?: boolean;
+  selectedValue?: any;
+  onValueChange?: (value: any) => void;
+  itemStyle?: any;
+  /** web only */
+  prefixCls?: string;
+  indicatorStyle?: any;
+  indicatorClassName?: string;
+  className?: string;
+  defaultSelectedValue?: any;
+  style?: any;
+  onScrollChange?: (value: any) => void;
+  noAnimate?: boolean;
+  rotate?: number;
+  children?: React.ReactNode;
+}
 
 export interface IPickerProp {
   select: (...arg) => void;

@@ -1,6 +1,6 @@
 /* tslint:disable:no-console */
 import * as React from "react";
-import { IPickerProps } from "./PickerTypes";
+import { IPickerProps } from "./Picker";
 
 export interface IItemProps {
   className?: string;

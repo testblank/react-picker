@@ -8,20 +8,16 @@
     "build": "rc-tools run build",
     "gh-pages": "rc-tools run gh-pages",
     "start": "rc-tools run server",
-    "prepublish": "rc-tools run guard",
-    "prepare": "rc-tools run guard",
-    "prepublishOnly": "rc-tools run guard",
-    "pub": "rc-tools run pub --babel-runtime",
-    "lint": "rc-tools run lint --no-js-lint",
-    "karma": "rc-test run karma",
-    "saucelabs": "rc-test run saucelabs",
     "test": "rc-test run test",
     "chrome-test": "rc-test run chrome-test",
     "coverage": "rc-test run coverage"
   },
+  "overrides": {
+    "graceful-fs": "^4.2.9"
+  },
   "author": "testblank",
   "license": "MIT",
-	"files": [
+  "files": [
     "lib",
     "es",
     "assets/*.css"
@@ -49,6 +45,7 @@
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "classnames": "^2.3.1",
+    "gulp-cli": "^2.3.0",
     "rmc-dialog": "^1.1.1",
     "rmc-feedback": "^2.0.0"
   }

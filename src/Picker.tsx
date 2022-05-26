@@ -1,9 +1,9 @@
 import * as React from "react";
 import classNames from "classnames";
-// import { IPickerProps } from "./PickerTypes";
+
 import PickerMixin from "./PickerMixin";
 
-import "./index.css";
+import "../assets/index.css";
 
 export interface IPickerProps {
   disabled?: boolean;

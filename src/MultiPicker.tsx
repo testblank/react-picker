@@ -3,7 +3,8 @@ import classnames from "classnames";
 
 import MultiPickerMixin from "./MultiPickerMixin";
 
-import "./index.css";
+import "../assets/index.css";
+
 export interface IPickerCol {
   key?: string;
   props?: any;

@@ -13,8 +13,7 @@ React Mobile Picker Component (web)
 [![Test coverage][coveralls-image]][coveralls-url]
 
 <!-- [![gemnasium deps][gemnasium-image]][gemnasium-url] -->
-
-[![npm download][download-image]][download-url]
+<!-- [![npm download][download-image]][download-url] -->
 
 [npm-image]: http://img.shields.io/npm/v/rmc-picker.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/rmc-picker

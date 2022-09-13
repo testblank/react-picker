@@ -2,7 +2,7 @@
 
 ---
 
-> customed rmc-picker for react v18. (rmc-picker hasn't been updated 3years.)
+> customed [rmc-picker](https://www.npmjs.com/package/rmc-picker) for react v18. (rmc-picker hasn't been updated 3years.)
 
 React Mobile Picker Component (web)
 
